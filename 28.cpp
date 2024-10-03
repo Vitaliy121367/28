@@ -7,6 +7,7 @@
 #include <cstdio>
 #include <cstring>
 #include "Scanner.h"
+#include "Printer.h"
 using namespace std;
 
 int main()
@@ -14,14 +15,16 @@ int main()
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
 
-    Scanner HP;
+    /*Scanner HP;
     cout << "Text: \n" << HP.getText()<<endl;
     cout << "------------------------------------------------\n";
     string user;
     cout << "Enter file name: ";
     cin >> user;
     HP.scanFile(user);
-    cout << "Text: \n" << HP.getText() << endl;
+    cout << "Text: \n" << HP.getText() << endl;*/
+
+    Printer::printFile("test.txt","Hello from Vitaliy",3);
 
     return 0;
 }
