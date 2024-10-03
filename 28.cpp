@@ -8,6 +8,7 @@
 #include <cstring>
 #include "Scanner.h"
 #include "Printer.h"
+#include "Xerox.h"
 using namespace std;
 
 int main()
@@ -24,7 +25,10 @@ int main()
     HP.scanFile(user);
     cout << "Text: \n" << HP.getText() << endl;*/
 
-    Printer::printFile("test.txt","Hello from Vitaliy",3);
+    /*Printer::printFile("test.txt","Hello from Vitaliy",3);*/
+
+    Xerox Canon;
+    Canon.copyFile("Scanner.h",3);
 
     return 0;
 }
